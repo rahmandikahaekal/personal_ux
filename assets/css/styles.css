@@ -9,8 +9,8 @@ body{
     background-color: #ffffff;
     color: #323232;
 }
-section { padding: 30px 0px 50px}
-img {s
+section { padding: 70px 0px 50px}
+img {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -36,4 +36,293 @@ ul,
 ol {
     list-style: none;
     padding: 0;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 30px;
+    color: #333;
+    margin: 0;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.btn-transparent {
+    border: 2px solid #fff;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: transparent;
+	color: #fff;
+    padding: 9px 25px;
+    text-transform: uppercase;
+}
+.btn-transparent:hover {
+	background-color: #fff;
+    color: #000;
+    transition: all 0.8s ease 0s;
+}
+.btn-white {
+	border: 2px solid #fff;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+    padding: 9px 35px;
+    text-transform: uppercase;
+}
+.btn-white:hover {
+    background-color: transparent;
+    color: #fff;
+    transition: all 0.8s ease 0s;
+}
+.btn-black {
+    border: 2px solid #000;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: transparent;
+	color: #000;
+    padding: 8px 20px;
+    text-transform: uppercase;
+}
+.btn-black:hover {
+    color: #fff;
+    background-color: #000;
+    transition: all 0.8s ease 0s;
+}
+
+
+/*====================
+    Custom Navbar
+====================*/
+.header-top-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    z-index: 999999;
+}
+.nav-logo-wrap .logo img {
+    padding-top: 8px;
+	width: 40%;
+}
+.site-header #logo-dark,
+.nav-logo-wrap .logo:after,
+.nav-logo-wrap .logo:before {
+	display: none
+}
+.main-nav.transparent #logo-white {
+    display: block;
+}
+.logo {
+    padding-top: 8px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.nav-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.toggle-btn {
+    background-color: transparent;
+    border: 0 none;
+    padding: 0;
+    outline: none;
+}
+.toggle-btn .icon-bar {
+    background-color: #fff;
+    display: block;
+    height: 2px;
+    margin-bottom: 5px;
+    width: 25px;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.toggle-btn.active .icon-bar:nth-child(2) {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+}
+.toggle-btn.active .icon-bar:nth-child(1) {
+    top: 9px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.toggle-btn.active .icon-bar:nth-child(3) {
+    top: -5px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.toggle-btn .icon-bar:last-child {
+    margin-bottom: 0;
+}
+.nav-toggle + .navbar-collapse {
+    margin-right: 43px;
+}
+.site-header .navbar-collapse {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+.site-header.active .navbar-collapse {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+}
+.mainmenu .navbar-nav li a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 30px 15px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    font-weight: 600;
+}
+.mainmenu .navbar-nav li a:hover {
+    background: none;
+    color: #000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.nav li a:focus,
+.nav li a:hover {
+    background: none;
+    color: #000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.navbar {
+    margin: 0;
+}
+.menu-bg {
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background: #fff;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.28);
+}
+.menu-bg .logo {
+    padding-top: 18px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.menu-bg .mainmenu .navbar-nav li a {
+    color: #000;
+    padding: 20px 15px;
+    text-transform: uppercase;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.menu-bg .mainmenu .navbar-nav li a:hover {
+    color: #000;
+    text-decoration: line-through;
+}
+
+/*===================
+    Home
+===================*/
+.banner{
+	position: relative;
+	width: 100%;
+	height: 570px;
+	background-image: url('../img/bg_banner.jpeg');
+    background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.banner:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    background: #000;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	opacity: 0.60;
+	filter: alpha(Opacity=90);
+}
+.main_banner_area {
+    position: relative;
+    top: 155px;
+	text-align: center;
+    z-index: 9999;
+    color: #fff;
+}
+.main_banner_area h3,
+.main_banner_area h1{
+    margin: 0;
+}
+.main_banner_area h3 {
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.main_banner_area h1 {
+    font-weight: 800;
+    font-size: 45px;
+    padding-bottom: 13px;
+}
+.main_banner_area p {
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+.main_banner_area ul {
+    padding-top: 10px;
+}
+.main_banner_area ul li {
+    display: inline-block;
+    padding-right: 17px;
+}
+
+/*===================
+    Intro
+===================*/
+section.intro {
+    padding-bottom: 0px;
+}
+.intro_col {
+	padding-right: 0px;
+}
+.intro_col h2:nth-child(2) {
+    padding-bottom: 15px;
+}
+.intro_col p {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+.intro_col p:nth-child(4) {
+    padding-bottom: 40px;
+}
+
+/*===================
+    Service
+===================*/
+.service {
+	background-color: #f6f6f6;
+    color: #323232;
+}
+.service p {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+.main_service_area {
+	padding-top: 15px;
+}
+.main_service_area h4 {
+	font-weight: 800;
+    font-size: 24px;
 }
