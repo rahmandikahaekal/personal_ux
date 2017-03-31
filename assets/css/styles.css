@@ -46,6 +46,15 @@ h2 {
     padding-bottom: 10px;
     text-transform: uppercase;
 }
+h4 {
+    font-weight: 800;
+    font-size: 24px;
+}
+.head_col p {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px;
+    color: #666;
+}
 
 .btn-transparent {
     border: 2px solid #fff;
@@ -320,7 +329,16 @@ section.intro {
 .main_service_area {
 	padding-top: 15px;
 }
-.main_service_area h4 {
-	font-weight: 800;
-    font-size: 24px;
+
+/*===================
+    Offer
+===================*/
+.main_offer_area {
+    padding-top: 20px;
+}
+.main_offer_area i {
+    border: 1px solid #000;
+    border-radius: 50%;
+    font-size: 29px;
+    padding: 15px;
 }
