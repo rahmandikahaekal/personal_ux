@@ -179,7 +179,6 @@ h2 {
 }
 .mainmenu .navbar-nav li a {
     color: #fff;
-    text-transform: capitalize;
     font-size: 14px;
     letter-spacing: 1px;
     padding: 30px 15px;
@@ -217,7 +216,6 @@ h2 {
 .menu-bg .mainmenu .navbar-nav li a {
     color: #000;
     padding: 20px 15px;
-    text-transform: uppercase;
     -webkit-transition: .3s;
     transition: .3s;
 }
@@ -254,7 +252,7 @@ h2 {
 }
 .main_banner_area {
     position: relative;
-    top: 155px;
+    top: 115px;
 	text-align: center;
     z-index: 9999;
     color: #fff;
