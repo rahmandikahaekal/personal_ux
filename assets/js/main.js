@@ -8,6 +8,28 @@ new WOW().init();
     
     jQuery(document).ready(function () {
         
+        $(document).ready(function(){
+            $("#testimonial-slider").owlCarousel({
+                items: 2,
+                itemsDesktop:[1000,3],
+                itemsDesktopSmall:[990,2],
+                itemsTablet:[767,1],
+                pagination:true,
+                navigation:false,
+                autoPlay:true
+            });
+            
+            $("#client_slider").owlCarousel({
+                items: 4,
+                itemsDesktop:[1000,3],
+                itemsDesktopSmall:[990,2],
+                itemsTablet:[767,1],
+                pagination:true,
+                navigation:false,
+                autoPlay:true
+            })
+        });
+        
         //Menu JS
         $(".toggle-btn").on("click", function () {
             $(this).toggleClass("active");
@@ -27,6 +49,12 @@ new WOW().init();
                 jQuery("#logo-white").css({"display": "inline"});
                 jQuery(".nav-toggle .toggle-btn .icon-bar").css({"background-color": "#fff"});
             }
+        });
+        
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            showImageNumberLabel: false,
         });
         
         //Smoothscroll
