@@ -532,3 +532,106 @@ div.label_link_contact section {
 /*===================
     Blog
 ===================*/
+.main_blog_area {
+    padding-top: 20px;
+}
+.main_blog_area .blog_detail {
+    font-family: 'Open Sans',sans-serif;
+    padding: 8px 0px;
+}
+.main_blog_area .blog_detail li {
+    display: inline-block;
+    color: #444;
+    padding-right: 10px;
+}
+.blog_content h6 {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: inherit;
+}
+.link_blog {
+    font-weight: 700;
+    color: #333;
+}
+.link_blog i {
+    padding-left: 7px;
+}
+a.link_blog:after {
+    border-bottom: 2px solid #333;
+    content: ' ';
+    display: block;
+    position: relative;
+    top: 4px;
+    width: 33%;
+    opacity: 0;
+    transition: all 0.4s ease-in 0s;
+}
+a.link_blog:hover,
+a.link_blog:active,
+a.link_blog:visited,
+a.link_blog:hover:after {
+    color: #333;
+    opacity: 1;
+}
+
+/*===================
+    Label Social
+===================*/
+.label_social {
+	background-color: #1a1a1a;
+}
+.label_social h2 {
+    color: #fff;
+}
+.label_social ul li {
+    display: inline-block;
+    padding: 0px 8px;
+}
+.label_social ul li i {
+    font-size: 20px;
+    border: 1px solid #fff;
+    padding: 10px;
+    color: #fff;
+    transition: all 0.3s ease-in 0s;
+}
+.label_social_link li:nth-child(1) i {
+    padding: 10px 15px;
+}
+.label_social_link li:nth-child(2) i,
+.label_social_link li:nth-child(5) i {
+    padding: 10px 12px;
+}
+.label_social_link li:nth-child(3) i {
+    padding: 10px 14px;
+}
+.label_social_link li:nth-child(4) i {
+    padding: 10px 13px;
+}
+.label_social_link li:nth-child(1):hover i {
+    background-color: #3b5998;
+}
+.label_social_link li:nth-child(2):hover i {
+    background-color: #48c0eb;
+}
+.label_social_link li:nth-child(3):hover i {
+    background-color: #0177b5;
+}
+.label_social_link li:nth-child(4):hover i {
+    background-color: #fff;
+    color: #000;
+}
+.label_social_link li:nth-child(5):hover i {
+    background-color: #0047ad;
+}
+
+/*===================
+    Footer
+===================*/
+.footer {
+    font-family: 'Open Sans',sans-serif;
+	background-color: #181818;
+    color: #fff;
+}
+.footer section {
+    padding: 13px 0px 10px;
+}
