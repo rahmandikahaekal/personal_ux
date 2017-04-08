@@ -8,28 +8,6 @@ new WOW().init();
     
     jQuery(document).ready(function () {
         
-        $(document).ready(function(){
-            $("#testimonial-slider").owlCarousel({
-                items: 2,
-                itemsDesktop:[1000,3],
-                itemsDesktopSmall:[990,2],
-                itemsTablet:[767,1],
-                pagination:true,
-                navigation:false,
-                autoPlay:true
-            });
-            
-            $("#client_slider").owlCarousel({
-                items: 4,
-                itemsDesktop:[1000,3],
-                itemsDesktopSmall:[990,2],
-                itemsTablet:[767,1],
-                pagination:true,
-                navigation:false,
-                autoPlay:true
-            })
-        });
-        
         //Menu JS
         $(".toggle-btn").on("click", function () {
             $(this).toggleClass("active");
@@ -51,12 +29,6 @@ new WOW().init();
             }
         });
         
-        lightbox.option({
-            'resizeDuration': 200,
-            'wrapAround': true,
-            showImageNumberLabel: false,
-        });
-        
         //Smoothscroll
         $('a.smoth-scroll').on("click", function (e) {
             var anchor = $(this);
@@ -75,6 +47,11 @@ new WOW().init();
         $('body').scrollspy({
             target: '.navbar-collapse',
             offset: 195
+        });
+            
+        jQuery('.counter').counterUp({
+            delay: 10,
+            time: 3000
         });
     });
 })(jQuery);
