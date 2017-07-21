@@ -51,12 +51,6 @@ new WOW().init();
             }
         });
         
-        lightbox.option({
-            'resizeDuration': 200,
-            'wrapAround': true,
-            showImageNumberLabel: false,
-        });
-        
         //Smoothscroll
         $('a.smoth-scroll').on("click", function (e) {
             var anchor = $(this);
