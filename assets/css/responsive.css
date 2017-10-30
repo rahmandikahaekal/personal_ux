@@ -57,3 +57,13 @@
         background: rgba(0, 0, 0, .9);
     }
 }
+
+@media only screen and (max-width: 370px) {
+    .main_banner_area ul li {
+        width: 43%;
+        padding-right: 0px;
+    }
+    .btn-transparent , .btn-white {
+        padding: 9px 12px;
+    }
+}

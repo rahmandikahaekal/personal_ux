@@ -43,7 +43,7 @@ new WOW().init();
                 jQuery("#logo-dark").css({"display": "inline"});
                 jQuery("#logo-white").css({"display": "none"});
                 jQuery(".nav-toggle .toggle-btn .icon-bar").css({"background-color": "#000"});
-            } else {""
+            } else {
                 $('.header-top-area').removeClass('menu-bg');
                 jQuery("#logo-dark").css({"display": "none"});
                 jQuery("#logo-white").css({"display": "inline"});
